@@ -32,7 +32,7 @@ console.log(result);`);
 
     setIsLoading(true);
     try {
-      const response = await axios.post('http://localhost:3000/ai/get-review', { code });
+      const response = await axios.post('https://ai-code-reviewer-2-k6ko.onrender.com/ai/get-review', { code });
       if (response.data.success) {
         setReview(response.data.review);
       } else {
