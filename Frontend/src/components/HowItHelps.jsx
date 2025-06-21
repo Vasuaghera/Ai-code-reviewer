@@ -48,7 +48,7 @@ const HowItHelps = () => {
             How AI Code Review Helps You
           </h2>
           <p className="text-xl text-gray-400 max-w-3xl mx-auto">
-            Whether you're a solo developer or part of a large team, our AI code reviewer 
+            Whether you&apos;re a solo developer or part of a large team, our AI code reviewer 
             provides value at every level of your development process.
           </p>
         </div>

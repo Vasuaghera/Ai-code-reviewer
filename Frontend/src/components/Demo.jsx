@@ -81,7 +81,7 @@ console.log(result);`);
                   highlight={code => prism.highlight(code, prism.languages.javascript, "javascript")}
                   padding={10}
                   className="code-editor"
-                  style={{ fontFamily: '"Fira code", "Fira Mono", monospace', fontSize: 16 }}
+                  style={{ fontFamily: `"Fira code", "Fira Mono", monospace`, fontSize: 16 }}
                 />
               </div>
               <button
@@ -112,7 +112,7 @@ console.log(result);`);
                         </svg>
                       </div>
                       <h3 className="text-xl font-semibold mb-2">Ready for Review</h3>
-                      <p className="text-sm">Click "Review Code" to get AI-powered feedback</p>
+                      <p className="text-sm">Click &quot;Review Code&quot; to get AI-powered feedback</p>
                     </div>
                   </div>
                 ) : (
