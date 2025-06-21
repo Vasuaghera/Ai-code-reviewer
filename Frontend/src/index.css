@@ -1,0 +1,82 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap');
+
+@layer base {
+  html, body, #root {
+    @apply h-full w-full;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    @apply m-0 min-w-[320px] min-h-screen bg-gray-900;
+  }
+
+  /* Custom scrollbar for the review panel */
+  ::-webkit-scrollbar {
+    @apply w-2;
+  }
+
+  ::-webkit-scrollbar-track {
+    @apply bg-gray-700 rounded-full;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    @apply bg-gray-500 rounded-full hover:bg-gray-400 transition-colors;
+  }
+}
+
+@layer components {
+  .code-editor {
+    @apply font-mono text-base border border-gray-600 rounded-lg h-full w-full bg-code-bg text-white resize-none outline-none;
+}
+
+  .review-button {
+    @apply absolute bottom-4 right-4 bg-blue-500 hover:bg-blue-600 text-white px-6 py-3 font-medium cursor-pointer select-none rounded-lg transition-all duration-200 shadow-lg hover:shadow-xl transform hover:scale-105 active:scale-95;
+}
+
+  .prose-custom {
+    @apply prose prose-invert max-w-none;
+  }
+
+  .prose-custom h1 {
+    @apply text-3xl font-bold text-blue-400 mb-4;
+}
+
+  .prose-custom h2 {
+    @apply text-2xl font-semibold text-green-400 mb-3;
+  }
+
+  .prose-custom h3 {
+    @apply text-xl font-medium text-yellow-400 mb-2;
+}
+
+  .prose-custom code {
+    @apply bg-gray-700 text-green-300 px-2 py-1 rounded text-sm;
+  }
+
+  .prose-custom pre {
+    @apply bg-gray-800 border border-gray-600 rounded-lg p-4 overflow-x-auto;
+  }
+
+  .prose-custom pre code {
+    @apply bg-transparent text-white p-0;
+}
+
+  .prose-custom blockquote {
+    @apply border-l-4 border-blue-500 pl-4 italic text-gray-300;
+}
+
+  .prose-custom ul {
+    @apply list-disc list-inside space-y-1;
+}
+
+  .prose-custom ol {
+    @apply list-decimal list-inside space-y-1;
+  }
+}
