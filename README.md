@@ -2,6 +2,8 @@
 
 A full-stack web application that uses Google Gemini AI to provide intelligent code review suggestions. Built with React, Node.js, and Express.
 
+![aicodereview-diagram](Frontend/src/assets/aicodereview-diagram.drawio.png)
+
 ## 🚀 Features
 
 - **AI-Powered Code Analysis**: Leverages Google Gemini AI for intelligent code review
